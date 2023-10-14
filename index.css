@@ -1,0 +1,29 @@
+body{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-image: url("https://img.freepik.com/free-photo/stacked-casino-tokens-royal-flush-green-background_23-2148952342.jpg?w=996&t=st=1697322211~exp=1697322811~hmac=de10cdbc045394d69b0266d75653ea1963f13d00bc92bcfed3f41fbe7bd3aa36");
+    background-size: cover;
+    /* background-color: green; */
+    text-align: center;
+    color: white;
+}
+
+h1{
+    color: goldenrod;
+}
+
+button{
+    color: #016f32;
+    width: 150px;
+    background-color: goldenrod;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-weight: bolder;
+    border-radius: 2px;
+    border: none;
+    margin-bottom: 4px;
+    margin-top: 4px;
+}
+
+#message-el {
+    font-style: italic;
+}
