@@ -1,14 +1,69 @@
 body{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    background-image: url("https://img.freepik.com/free-photo/stacked-casino-tokens-royal-flush-green-background_23-2148952342.jpg?w=996&t=st=1697322211~exp=1697322811~hmac=de10cdbc045394d69b0266d75653ea1963f13d00bc92bcfed3f41fbe7bd3aa36");
+    background-image: url("back.jpg");
+    background-color: #0b5d2e;
     background-size: cover;
-    /* background-color: green; */
+    background-position: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 16px;
+    box-sizing: border-box;
     text-align: center;
     color: white;
+    text-shadow: 0 1px 4px rgba(0, 0, 0, 0.9);
 }
 
 h1{
     color: goldenrod;
+}
+
+h2{
+    font-size: 1.1rem;
+    margin: 8px 0;
+}
+
+.hand{
+    margin: 12px auto;
+}
+
+.cards{
+    min-height: 72px;
+}
+
+.card{
+    display: inline-block;
+    min-width: 40px;
+    padding: 18px 8px;
+    margin: 4px;
+    border-radius: 6px;
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    font-size: 1.2rem;
+    text-shadow: none;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+}
+
+.card.red{
+    color: #c0392b;
+}
+
+.card.hidden{
+    background-color: #1a3c8f;
+    color: goldenrod;
+}
+
+.controls{
+    margin: 6px 0;
+}
+
+input{
+    width: 80px;
+    padding: 5px;
+    margin: 4px;
+    border-radius: 2px;
+    border: none;
+    font-weight: bold;
 }
 
 button{
@@ -22,8 +77,15 @@ button{
     border: none;
     margin-bottom: 4px;
     margin-top: 4px;
+    cursor: pointer;
+}
+
+button:disabled{
+    opacity: 0.5;
+    cursor: not-allowed;
 }
 
 #message-el {
     font-style: italic;
+    min-height: 1.2em;
 }

@@ -1,16 +1,38 @@
-<!-- <!DOCTYPE html> -->
-<html>
+<!DOCTYPE html>
+<html lang="en">
     <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Blackjack</title>
         <link rel="stylesheet" href="index.css">
     </head>
     <body>
         <h1>Blackjack</h1>
-        <p id="message-el">Want to play a round? </p>
-        <p id="cards-el">Cards</p>
-        <p id="sum-el">Sum:</p>
-        <button onclick="startGame()">START GAME</button>
-        <button onclick="newCard()">NEW CARD</button>
-        <p id="id-el"></p>
+        <p id="player-el"></p>
+
+        <div class="hand">
+            <h2>Dealer <span id="dealer-sum-el"></span></h2>
+            <div id="dealer-cards-el" class="cards"></div>
+        </div>
+
+        <div class="hand">
+            <h2>You <span id="sum-el"></span></h2>
+            <div id="cards-el" class="cards"></div>
+        </div>
+
+        <p id="message-el">Place a bet to start a round.</p>
+
+        <div class="controls">
+            <label for="bet-el">Bet</label>
+            <input id="bet-el" type="number" min="10" step="10" value="20">
+            <button id="deal-btn" onclick="startGame()">DEAL</button>
+        </div>
+        <div class="controls">
+            <button id="hit-btn" onclick="newCard()" disabled>HIT</button>
+            <button id="stand-btn" onclick="stand()" disabled>STAND</button>
+            <button id="double-btn" onclick="doubleDown()" disabled>DOUBLE</button>
+        </div>
+        <button id="reset-btn" onclick="resetChips()">RESET CHIPS</button>
 
         <script src="index.js"></script>
     </body>
